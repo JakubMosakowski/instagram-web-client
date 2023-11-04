@@ -1,4 +1,39 @@
-video, img {
-  max-width: 100%;
-  height: auto;
+.App {
+    min-height: 100vh; /* Make sure your app fills the whole viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #333333, #4f4f4f); /* Gradient from dark gray to lighter gray */
+}
+.media-player {
+    /* Other styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the child elements horizontally */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* this gives a nice, soft shadow around the player */
+    border-radius: 10px; /* optional: if you want rounded corners */
+    overflow: hidden; /* ensures the content does not flow outside the border-radius */
+}
+
+button {
+    background-color: #E1306C; /* Instagram's brand color for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #C1275B; /* A slightly darker shade for the hover state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A subtle shadow to lift the button */
+}
+
+button:active {
+    box-shadow: none; /* Remove shadow on click to mimic a "pushed" effect */
 }
