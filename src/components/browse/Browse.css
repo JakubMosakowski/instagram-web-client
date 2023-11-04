@@ -1,4 +1,4 @@
-.App {
+.Browse {
     min-height: 100vh; /* Make sure your app fills the whole viewport */
     display: flex;
     flex-direction: column;
