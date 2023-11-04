@@ -11,7 +11,7 @@ function Browse() {
     useEffect(() => {
         const fetchData = async () => {
             const dateParam = moment().format('DD_MM_YYYY');
-            const response = await fetch(`/api/stories?date=${dateParam}`);
+            const response = await fetch(`https://api.mosakow.ski/api/stories?date=${dateParam}`);
             const data = await response.json();
             const models = data.urls.map((url) => {
                 // Check if the url is a video
